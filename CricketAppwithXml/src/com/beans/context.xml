@@ -22,8 +22,9 @@
    <entry key="nz" value="2544"></entry></map>
    </property>
    </bean>
+   
    <bean id="India" class="com.beans.TeamBean">
-   <property name="teamName" value="India"/>
+   <property name="name" value="India"/>
    <property name="players"  >
    <list>
    <ref bean="dhoni"/>
