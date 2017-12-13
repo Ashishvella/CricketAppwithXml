@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+                http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+   <bean id="dhoni" class="com.beans.PlayerBean">
+   <property name="playerName" value="MSD"/>
+   <property name="teamName" value="India"/>
+   <property name="Runs">
+   <map>
+   <entry key="pak" value="1234"></entry>
+   <entry key="nz" value="1544"></entry></map>
+   </property>
+   </bean>
+   <bean id="India" class="com.beans.TeamBean">
+   <property name="teamName" value="India"/>
+   <property name="players"  >
+   <list>
+   <ref bean="dhoni"/>
+   <ref bean="virat"/>
+   </list>
+   </property>
+   
+   
+   
+   </bean>
+</beans>                
